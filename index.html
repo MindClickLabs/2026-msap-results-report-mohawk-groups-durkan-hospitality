@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="color-scheme" content="only light">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Mohawk Group's Durkan Hospitality — 2026 MSAP Results Report</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%BF%3C/text%3E%3C/svg%3E">
@@ -14,11 +15,8 @@
   --linen:#F9F2EC; --card:#ffffff; --ink:#1c2622; --muted:#6a7772; --line:#e6e2dc; --soft:#f3f1ee;
   --label:#003E32; --sel:#9fd3f5; --down:#e0606a;
   box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
-  color-scheme:light;
+  color-scheme:only light;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --linen:#101715; --card:#18211e; --ink:#e8eee9; --muted:#9aa8a2; --line:#2c3833; --soft:#202b27; --label:#A5DFD3; --sel:#2d6f93; color-scheme:dark;}}
-:root[data-theme="dark"]{--linen:#101715; --card:#18211e; --ink:#e8eee9; --muted:#9aa8a2; --line:#2c3833; --soft:#202b27; --label:#A5DFD3; --sel:#2d6f93; color-scheme:dark;}
 *,*::before,*::after{box-sizing:inherit}
 html,body{margin:0}
 body{background:var(--linen);color:var(--ink);font:13px/1.45 "Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;padding:24px 16px}
@@ -28,8 +26,6 @@ body{background:var(--linen);color:var(--ink);font:13px/1.45 "Plus Jakarta Sans"
 /* header */
 .head{display:flex;align-items:center;gap:22px;padding:16px 26px 14px}
 .mclogo{height:34px;width:auto;display:block}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .mclogo [fill="#003e32"]{fill:#e8eee9}}
-:root[data-theme="dark"] .mclogo [fill="#003e32"]{fill:#e8eee9}
 .prog{font-size:15px;font-weight:500}
 .rule{height:6px;background:var(--green)}
 
